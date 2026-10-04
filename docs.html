@@ -1,0 +1,679 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Documentation | MpxHR</title>
+<meta name="description" content="The complete MpxHR user guide: every screen and setting, from getting started to payroll, email, Google Sync, backup and troubleshooting.">
+
+<meta property="og:type" content="website"><meta property="og:title" content="Documentation | MpxHR"><meta property="og:description" content="The complete MpxHR user guide: every screen and setting, from getting started to payroll, email, Google Sync, backup and troubleshooting."><meta property="og:image" content="assets/img/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#4f46e5">
+<link rel="icon" href="assets/img/favicon.png">
+<link rel="stylesheet" href="assets/site.css">
+</head><body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="hdr"><div class="wrap">
+<a class="brand" href="index.html"><img src="assets/img/logo.png" alt="" width="32" height="32">MpxHR</a>
+<button class="burger" aria-label="Menu" aria-expanded="false"><svg class="ic " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h18M3 6h18M3 18h18"/></svg></button>
+<nav class="nav"><a href="features.html" class=""><span data-i18n="nav.features">Features</span></a><a href="pricing.html" class=""><span data-i18n="nav.pricing">Pricing</span></a><a href="tutorials.html" class=""><span data-i18n="nav.tutorials">Tutorials</span></a><a href="docs.html" class="on"><span data-i18n="nav.docs">Documentation</span></a><a href="videos.html" class=""><span data-i18n="nav.videos">Videos</span></a><a href="download.html" class=""><span data-i18n="nav.download">Download</span></a><a href="contact.html" class=""><span data-i18n="nav.contact">Contact</span></a></nav>
+<div class="tools"><button class="lang" id="langbtn" aria-label="Language">हिंदी</button></div>
+</div></header>
+<main id="main"><section class="page-hero"><div class="wrap"><h1 data-i18n="docs.h">Documentation</h1><p data-i18n="docs.p">The complete user guide for MpxHR 4.2.0, in 24 sections. Use the search box to filter.</p></div></section><div class="wrap docs"><aside class="side"><input id="docsearch" type="search" placeholder="Search the guide..." aria-label="Search the guide"><a href="#whatsnew">What's New in Version 4.2</a><a href="#s1">1. Introduction &amp; Overview</a><a href="#s2">2. Getting Started</a><a href="#s3">3. Dashboard &amp; Analytics</a><a href="#s4">4. Employees, Departments, Designations, Branches</a><a href="#s5">5. Salary Heads, Categories, Loans, Deductions</a><a href="#s6">6. Company &amp; Branch Setup</a><a href="#s7">7. Attendance &amp; Shifts</a><a href="#s8">8. Leave Management</a><a href="#s9">9. Payroll Processing</a><a href="#s10">10. Payslips &amp; Payslip Designer</a><a href="#s11">11. Reports &amp; Form 16</a><a href="#s12">12. Documents &amp; Letters</a><a href="#s13">13. Other Modules &amp; Availability</a><a href="#s14">14. Importing Data &amp; Files</a><a href="#s15">15. Email Setup &amp; Automatic Emails</a><a href="#s16">16. Google Sync &amp; Form Builder</a><a href="#s17">17. Custom Fields &amp; Custom Tables</a><a href="#s18">18. Settings Reference</a><a href="#s19">19. Backup, Restore &amp; Data Security</a><a href="#s20">20. User Roles, Passwords &amp; Recovery</a><a href="#s21">21. Keyboard Shortcuts &amp; Tips</a><a href="#s22">22. Onboarding &amp; the Joiner Form</a><a href="#s23">23. Troubleshooting &amp; Support</a><hr style="border:0;border-top:1px solid var(--line)"><a href="assets/MpxHR_User_Guide.pdf" download><svg class="ic " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg> Download PDF guide</a></aside>
+<div class="doc"><section id="whatsnew"><h1>What's New in Version 4.2</h1>
+<p>This guide covers everything in MpxHR up to version 4.2. The highlights of 4.2 come first, then the earlier 4.x highlights:</p>
+
+<div class="grid2">
+  <div class="card"><b>Onboarding</b><p>A joining checklist for every new joiner before an employee record exists, a printable joining form, and <b>Make Employee</b> in one click. (Section 22)</p></div>
+  <div class="card"><b>Joiner Form</b><p>Send a link; new joiners fill their details and upload documents from a phone. Choose any question, with checks and file limits, review the answers, then add them. (Section 22)</p></div>
+  <div class="card"><b>Reliable backups</b><p>Backups now always capture the database the program really uses, are checked after saving, keep the newest N, and restore with a safety copy. (Section 19)</p></div>
+  <div class="card"><b>New look for every list</b><p>Summary cards, avatars, chips and status pills on Employees, Attendance, Payroll, Payslips, Loans and the masters, plus a redesigned Salary Sheet with a totals row. (Section 4, 9)</p></div>
+  <div class="card"><b>Flexible salary structure</b><p>Every employee can now have any number of salary heads with their own amounts. Payroll, payslips and reports all follow it. (Section 5.1, 9)</p></div>
+  <div class="card"><b>Redesigned payslips + Payslip Designer</b><p>New payslip layout with logo, loan details and amount in words, plus a drag-and-drop designer for your own layout. (Section 10)</p></div>
+  <div class="card"><b>Email system</b><p>Send payslips and letters by email, plus automatic leave-decision and birthday emails. Works with Gmail, Outlook, Zoho, Yahoo, any SMTP server, or a Google account. (Section 15)</p></div>
+  <div class="card"><b>Google Sync &amp; Form Builder</b><p>Export tables to a Google Sheet, import rows through an approval queue, and build Google Forms that fill several tables at once. (Section 16)</p></div>
+  <div class="card"><b>Safer Excel imports</b><p>Preview screen with duplicate/date/status checks before anything is saved; correct DD/MM/YYYY dates; no more merging of different employees who share an email. (Section 14)</p></div>
+  <div class="card"><b>Bulk payroll edits</b><p>Select employees in Net Pay and set or add one salary head for all of them; import the amounts from Excel. (Section 9.3)</p></div>
+  <div class="card"><b>Custom Fields &amp; Tables</b><p>Add your own fields to forms, or create new tables, with no code change. (Section 17)</p></div>
+  <div class="card"><b>Admin tools</b><p>DB Viewer, master recovery password, PAN field, application tour, keyboard-shortcut help, Data Security guide. (Sections 18, 20, 21)</p></div>
+</div>
+
+<h2>Smaller improvements</h2>
+<ul>
+  <li><b>Settings menu</b> now scrolls, so Custom Fields, Files &amp; Uploads, Security &amp; Users and Module Rights can be reached on a laptop screen; the top-bar Logout button is no longer cut off on narrow windows.</li>
+  <li>Google Forms in the Form Builder have <b>Preview</b> and <b>Share</b> (copy, WhatsApp, email), and a short guided <b>setup wizard</b> with a "Check now" button for the one-time Google script update.</li>
+  <li>When a window opens over another (Share, Preview), the one underneath is tucked away until you close it.</li>
+  <li>Employee and Net Pay rows open full detail with a single click anywhere on the row &mdash; no need to tick the checkbox first.</li>
+  <li>The Financial Year dropdown now generates itself (current year &minus;4 to +1) and always selects today's year.</li>
+  <li>Page changes show a small spinner on the clicked button instead of a full-screen loader.</li>
+  <li>Attendance import handles several months in one file and shows a result summary per month.</li>
+  <li>Salary Head setup saves reliably (Earning/Deduction type is validated); Basic and Special Allowance columns now import correctly.</li>
+  <li>Dropdown/Yes-No custom fields match saved values ignoring case and trailing spaces; out-of-list values show as "(not in list)".</li>
+  <li>Payroll now reads the live salary structure, so attendance and salary changes always reflect in Net Pay; company logo appears on payslips downloaded from Net Pay.</li>
+  <li>Last name is optional when syncing employees from Google Sheets.</li>
+  <li>Photos, signatures and documents: employee-form upload, bulk <b>Import Files</b> from a folder, Excel or Google Drive, with admin-set size and file-type limits (Section 14.4).</li>
+  <li><b>License and trial:</b> a 14-day free trial (up to 50 employees), then a license key from your vendor. Yearly plans end on a date with a 15-day grace period; a one-time <b>Lifetime</b> plan never expires. After that the app switches to view-only mode: you can still view, print and export everything, but cannot add or change records until a new key is entered. Enter keys at <span class="menu">Masters &rsaquo; Settings &rsaquo; License</span>; a banner under the ribbon shows the trial or expiry status.</li>
+  <li><b>New look everywhere:</b> redesigned top bar and ribbon, Dashboard, Analytics (3D bar and ring charts, per-company numbers), Reports Center, Letters, tables with status pills, and modern add/edit popups.</li>
+  <li><b>Safer sign-in:</b> show/hide password, Caps Lock warning, &ldquo;Remember my user name&rdquo;, and a temporary lock after 5 wrong attempts (30 seconds, doubling up to 15 minutes). Wrong passwords now show a clear message.</li>
+  <li><b>Clickable inputs after logout:</b> fixed a problem where text boxes on the login page could not be clicked after logging out.</li>
+  <li>Delete and confirmation questions now use an in-app dialog (red button for deletes) instead of the Windows pop-up.</li>
+  <li>Attendance screen: clearer toolbar with labelled buttons, employee code and designation under each name, today highlighted, and P/A totals as chips.</li>
+  <li>Payslip Designer: the full A4 page now fits on screen and the side panels are tidier.</li>
+  <li>Icon tooltips across the app; improved company-data isolation and payroll accuracy fixes.</li>
+</ul>
+
+
+</section>
+<section id="s1"><h1>1. Introduction &amp; Overview</h1>
+<p>MpxHR Enterprise is a complete, offline-first Desktop HR Management System for small and mid-sized organisations. It runs on a local computer &mdash; no internet is needed for day-to-day use &mdash; and keeps all company, employee, attendance and payroll data on that machine. Internet is only used by the optional features: Email and Google Sync.</p>
+<h2>What MpxHR manages</h2>
+<table class="wide-first">
+<tr><th style="width:26%">Area</th><th>What it covers</th></tr>
+<tr><td>Employee Records</td><td>Personal, statutory (PAN, Aadhaar, PF, ESI, UAN), bank and salary-structure profiles; custom fields</td></tr>
+<tr><td>Attendance &amp; Leave</td><td>Daily and monthly attendance, shifts, leave types, holidays, PL/CL credit, Excel import</td></tr>
+<tr><td>Payroll</td><td>Automatic PF / VPF / ESI / PT / TDS / loan / custom deductions, bulk head updates, challans</td></tr>
+<tr><td>Payslips</td><td>PDF/Word payslips, bulk export, email delivery, custom layout designer</td></tr>
+<tr><td>Compliance</td><td>Form 16 certificate, statutory challans, PF/ESI/TDS reports</td></tr>
+<tr><td>Loans &amp; Assets</td><td>Employee loans with automatic EMI recovery; asset records (syncable with Google Sheets)</td></tr>
+<tr><td>Communication <span class="new">NEW</span></td><td>Email payslips and letters; automatic leave and birthday emails</td></tr>
+<tr><td>Integrations <span class="new">NEW</span></td><td>Google Sheets sync, Google Form builder</td></tr>
+<tr><td>Reporting</td><td>Ready-made reports and a custom report builder</td></tr>
+</table>
+<div class="box"><b class="t">Multi-company.</b> One installation can manage several companies and branches. You choose the active company at launch and can switch it any time from the top context bar.</div>
+
+
+</section>
+<section id="s2"><h1>2. Getting Started</h1>
+<h2>2.1 Launching and logging in</h2>
+<ol class="steps">
+  <li>Double-click the MpxHR icon on the desktop or Start Menu.</li>
+  <li>Enter User Name and Password, then click <b>Sign In</b>.</li>
+</ol>
+<div class="box warn"><b class="t">Default administrator login:</b> username <b>admin</b>, password <b>admin123</b>. Change it immediately after the first login (<span class="menu">Masters &rsaquo; Settings &rsaquo; Security &amp; Users</span>).</div>
+
+<h2>2.2 Selecting a company</h2>
+<p>After login the Company Selection screen shows quick numbers (Total Employees, Departments, Present Today, Registered Companies), Quick Reports and the company list. Click a row (or <b>Add</b> to register a new company) and press <b>Continue</b>.</p>
+
+<h2>2.3 The main window</h2>
+<table class="wide-first">
+<tr><th style="width:26%">Area</th><th>Purpose</th></tr>
+<tr><td>Context bar (top)</td><td>Switch Company, Financial Year (Apr&ndash;Mar) and Month. Most screens filter by these, and reload when you change them.</td></tr>
+<tr><td>Ribbon tabs</td><td>Dashboard, Masters, Attendance, Payroll, Reports, Documents</td></tr>
+<tr><td>Ribbon toolbar</td><td>Icons for each module of the active tab</td></tr>
+<tr><td>Title-bar icons</td><td><b>Application Tour</b> (magic wand), <b>Keyboard Shortcuts</b>, <b>User Guide</b> (this PDF), <b>Contact Support</b>, <b>Logout</b></td></tr>
+<tr><td>Content area</td><td>The active screen &mdash; grids, forms and reports</td></tr>
+</table>
+<div class="box tip"><b class="t">First time here?</b> Click the magic-wand icon for a guided Application Tour of the interface.</div>
+
+<h2>2.4 Ribbon map</h2>
+<table class="wide-first">
+<tr><th style="width:18%">Tab</th><th>Icons</th></tr>
+<tr><td>Dashboard</td><td>Overview, Analytics</td></tr>
+<tr><td>Masters</td><td>Employees, Departments, Designations, Branches, Salary Heads, <b>Payslip Designer</b> <span class="new">NEW</span>, Categories, Loan Setup, User Deductions, Companies, Data Security, Settings</td></tr>
+<tr><td>Attendance</td><td>Daily Attn., Monthly Attn., Leave App., Shifts</td></tr>
+<tr><td>Payroll</td><td>Net Pay, Payslips, Loan Setup</td></tr>
+<tr><td>Reports</td><td>All Reports</td></tr>
+<tr><td>Documents</td><td>Letters</td></tr>
+</table>
+
+
+
+</section>
+<section id="s3"><h1>3. Dashboard &amp; Analytics</h1>
+<h2>3.1 Overview</h2>
+<ul>
+  <li><b>Recently Viewed Pages</b> &mdash; quick links back to screens used in this session.</li>
+  <li><b>Request Links</b> &mdash; pending TDS, loan, leave, attendance and reimbursement requests.</li>
+  <li><b>Bulk Changes Links</b> &mdash; jump into bulk-edit mode for Branch, Designation, Employee Details, Salary Definition, Shift or Category.</li>
+  <li><b>Utility Links</b> &mdash; Current Running Loans, EMI Calculator, Section 80C quick reference, Allowance &amp; Deduction shortcuts.</li>
+</ul>
+<h2>3.2 Analytics</h2>
+<p><span class="menu">Dashboard &rsaquo; Analytics</span> shows four live charts: Employment Status, Attendance Overview (current month), Salary Distribution by Department and Hiring Growth (last 6 months). Click <b>Refresh Data</b> to reload.</p>
+
+
+</section>
+<section id="s4"><h1>4. Employees, Departments, Designations, Branches</h1>
+<h2>4.1 Employees</h2>
+<p><span class="menu">Masters &rsaquo; Employees</span> is the central record for every staff member. <b>Click anywhere on a row to open the full detail</b> <span class="new">NEW</span>.</p>
+<h3>Adding an employee</h3>
+<ol class="steps">
+  <li>Click <b>New</b>.</li>
+  <li>Fill personal details (name, DOB, gender, contact, address), employment details (department, designation, date of joining, status), salary structure and statutory numbers: <b>PAN</b> <span class="new">NEW</span>, Aadhaar, PF, ESI, UAN.</li>
+  <li>Fill any <b>custom fields</b> you have defined (Section 17).</li>
+  <li>Add a <b>photo</b> and <b>signature</b> with the Browse buttons beside the form. After the first Save, the <b>Documents</b> box lets you upload Aadhaar, PAN, certificates and so on (Section 14.4).</li>
+  <li>Click <b>Save</b> (<kbd>Ctrl</kbd>+<kbd>S</kbd>).</li>
+</ol>
+<div class="box"><b class="t">Salary structure.</b> The salary structure is no longer limited to six fixed columns. It lists whichever Salary Heads you define in <span class="menu">Masters &rsaquo; Salary Heads</span>, each with its own amount per employee.</div>
+<h3>Editing, selecting, deleting</h3>
+<ul>
+  <li>Tick one or more checkboxes (or the header checkbox to select all). <b>Edit</b> needs exactly one selected employee.</li>
+  <li><b>Delete</b> works on many employees at once and removes their attendance, payroll, leave and document history. This cannot be undone &mdash; take a backup first.</li>
+  <li><b>Simultaneous Edit</b> &mdash; inline bulk editing of many rows.</li>
+  <li><b>Import / Export / Template</b> &mdash; Excel in and out (Section 14). Search plus Department/Branch filters narrow the grid.</li>
+</ul>
+<h2>4.2 Departments</h2>
+<p><span class="menu">Masters &rsaquo; Departments</span> &mdash; simple list used for grouping and reporting everywhere.</p>
+<h2>4.3 Designations</h2>
+<p><span class="menu">Masters &rsaquo; Designations</span> &mdash; job titles with a default base salary, <b>LWF Category</b> (Employee / Supervisor / Manager), <b>Probation Period</b> (days) and <b>Deduct PT</b> (whether Professional Tax applies).</p>
+<h2>4.4 Branches</h2>
+<p><span class="menu">Masters &rsaquo; Branches</span> &mdash; office locations linked to a company; employees and attendance can be filtered by branch.</p>
+
+
+</section>
+<section id="s5"><h1>5. Salary Heads, Categories, Loans, Deductions</h1>
+<h2>5.1 Salary Heads <span class="new">UPDATED</span></h2>
+<p><span class="menu">Masters &rsaquo; Salary Heads</span> defines every pay component. The grid shows Description, Short Code, Type, Form 16 Purpose and flags for PF, ESI, Bonus, OT and Active.</p>
+<ol class="steps">
+  <li>Click <b>Add New</b>, enter the description (for example <i>House Rent Allowance</i>) and short code.</li>
+  <li>Choose <b>Type</b>: <b>Earning</b> or <b>Deduction</b> (required).</li>
+  <li>Tick whether the head counts toward PF, ESI, Bonus and Overtime, choose its Form 16 purpose, and keep it Active.</li>
+  <li>Save. The head is immediately available in each employee's salary structure, Net Pay, payslips and reports.</li>
+</ol>
+<p>Use <b>Modify</b> to change a head and <b>Delete</b> to remove one. Existing payroll history keeps working, because older payroll data is read through the same dynamic structure.</p>
+<h2>5.2 Employee Categories</h2>
+<p><span class="menu">Masters &rsaquo; Categories</span> &mdash; free-form groups (Staff, Worker, Management) for classification and bulk reporting.</p>
+<h2>5.3 Loan Setup</h2>
+<p><span class="menu">Masters &rsaquo; Loan Setup</span> (also under the Payroll tab) &mdash; record a loan or advance once:</p>
+<ol class="steps">
+  <li>Click <b>New</b>; pick the employee, loan type, principal, monthly EMI and start date.</li>
+  <li>Save. The loan shows as Active with a running balance.</li>
+</ol>
+<p>Each payroll run deducts the active EMI and reduces the balance. At zero the loan closes automatically; use <b>Mark Closed</b> to close it manually. Loan details also appear on the payslip.</p>
+<h2>5.4 User Defined Deductions</h2>
+<p><span class="menu">Masters &rsaquo; User Deductions</span> &mdash; company-wide custom deductions (uniform fee, canteen). Each is a Fixed amount or a Percentage of Gross, and applies to every payroll run while Active.</p>
+
+
+</section>
+<section id="s6"><h1>6. Company &amp; Branch Setup</h1>
+<p><span class="menu">Masters &rsaquo; Companies</span> holds each company's legal and statutory identity across five tabs:</p>
+<table class="wide-first">
+<tr><th style="width:20%">Tab</th><th>Contents</th></tr>
+<tr><td>General</td><td>Name, code, establishment date, business type, address, logo (the logo prints on payslips)</td></tr>
+<tr><td>Statutory</td><td>PAN, TAN, GSTIN, CIN, Professional Tax and LWF registration, Tax Circle/CIT</td></tr>
+<tr><td>PF / ESI</td><td>PF code, establishment ID, signatory; ESI code, local office, signatory</td></tr>
+<tr><td>Bank</td><td>Company bank account for payslips and bank advice</td></tr>
+<tr><td>Management</td><td>Two Directors / Authorised Signatories</td></tr>
+</table>
+<p>Use <b>Simultaneous Edit</b> to correct several companies at once. A newly added company appears in the top context-bar dropdown immediately, without restarting.</p>
+
+
+</section>
+<section id="s7"><h1>7. Attendance &amp; Shifts</h1>
+<h2>7.1 Daily Attendance</h2>
+<p><span class="menu">Attendance &rsaquo; Daily Attn.</span> &mdash; check employees in/out for today or correct a day's punch times and status.</p>
+<h2>7.2 Monthly Attendance</h2>
+<p><span class="menu">Attendance &rsaquo; Monthly Attn.</span> shows every employee against every day of the month as a colour-coded grid. Click a cell to change it.</p>
+<table>
+<tr><th style="width:14%">Code</th><th>Meaning</th></tr>
+<tr><td>P</td><td>Present</td></tr><tr><td>A</td><td>Absent</td></tr><tr><td>L</td><td>Leave</td></tr>
+<tr><td>WO</td><td>Weekly Off</td></tr><tr><td>HD</td><td>Half Day</td></tr><tr><td>PL</td><td>Paid Leave</td></tr><tr><td>HL</td><td>Holiday</td></tr>
+</table>
+<p>The PL and RH counters in the header show the remaining Paid Leave and Restricted Holiday balances.</p>
+<h3>Bulk tools</h3>
+<ul>
+  <li><b>Mark Multiple</b> &mdash; one status for several employees over a date range.</li>
+  <li><b>XLS / Tpl / Imp</b> &mdash; export the grid, download a fill-in template, or import from Excel. Imports are validated first (Section 14) and can contain <b>several months in one file</b> <span class="new">NEW</span>, with a per-month result summary.</li>
+  <li><b>Credit Leaves</b> (coins icon) &mdash; credits monthly PL/CL to employees who meet tenure and minimum-attendance rules.</li>
+  <li><b>Auto-Fill</b> (magic wand) &mdash; fills remaining blank days as Present before month-end payroll.</li>
+  <li><b>Restore Default</b> &mdash; return a day's cell to its default status.</li>
+</ul>
+<h2>7.3 Shifts</h2>
+<p><span class="menu">Attendance &rsaquo; Shifts</span> &mdash; define shift start/end and grace period, and assign employees through the roster.</p>
+
+
+</section>
+<section id="s8"><h1>8. Leave Management</h1>
+<p><span class="menu">Attendance &rsaquo; Leave App.</span></p>
+<h2>8.1 Applying and approving</h2>
+<p>Select the employee (administrators only; employees see only their own record), leave type, date range and reason, then submit. An administrator <b>Approves</b> or <b>Rejects</b>. <span class="new">NEW</span> If automatic emails are enabled (Section 15), the employee is emailed the decision.</p>
+<h2>8.2 Leave types &amp; holidays</h2>
+<ul>
+  <li><b>Leave Types</b> &mdash; Casual, Sick, Paid Leave etc., each with a yearly maximum and a colour.</li>
+  <li><b>Holiday Calendar</b> &mdash; Public, National or Restricted (RH). Restricted holidays feed the RH balance on the Attendance screen.</li>
+</ul>
+<h2>8.3 Leave balances</h2>
+<p>Running balance per leave type is tracked automatically and visible on the Leave screen and employee profile.</p>
+
+
+</section>
+<section id="s9"><h1>9. Payroll Processing</h1>
+<h2>9.1 Payroll months</h2>
+<p>Each Financial Year / Month has an Open or Closed status. Close a month once payroll is final to prevent accidental changes.</p>
+<h2>9.2 Generating payroll &mdash; Net Pay</h2>
+<p><span class="menu">Payroll &rsaquo; Net Pay</span> shows every active employee's salary sheet, grouped into Employee Details, Income and Deductions. <b>Click a row to open its full detail</b> <span class="new">NEW</span>.</p>
+<ol class="steps">
+  <li>Confirm Company / Financial Year / Month in the context bar.</li>
+  <li>Click the refresh icon to (re)calculate from attendance and the salary structure.</li>
+  <li>Review or adjust cells if required.</li>
+  <li>Click <b>Save</b> to commit the payroll for the period.</li>
+</ol>
+<h3>What is deducted automatically</h3>
+<table class="wide-first">
+<tr><th style="width:26%">Deduction</th><th>Source</th></tr>
+<tr><td>PF</td><td>Employee's PF rate on the PF-flagged heads, capped at the configured wage limit</td></tr>
+<tr><td>VPF</td><td>Employee's voluntary PF percentage</td></tr>
+<tr><td>ESI</td><td>Applied when gross is within the ESI threshold</td></tr>
+<tr><td>Professional Tax</td><td>Employee and designation PT settings</td></tr>
+<tr><td>TDS</td><td>Configurable income-tax slabs</td></tr>
+<tr><td>Loan EMI</td><td>Any Active loan in Loan Setup</td></tr>
+<tr><td>User Defined Deductions</td><td>Active custom deductions</td></tr>
+<tr><td>Deduction-type salary heads <span class="new">NEW</span></td><td>Shown in the grid's <b>Head Ded.</b> column and on the deductions side of the payslip</td></tr>
+<tr><td>LOP</td><td>Pro-rated from attendance shortfall</td></tr>
+</table>
+<h2>9.3 Bulk update of a salary head <span class="new">NEW</span></h2>
+<ol class="steps">
+  <li>Tick the employees in the Net Pay grid; the <b>Bulk Update Head</b> button appears.</li>
+  <li>Choose the salary head and enter the amount.</li>
+  <li>Select whether to <b>Set</b> the value or <b>Add</b> to the current value, then apply.</li>
+  <li>Alternatively use <b>Import Excel</b> in the same window to load per-employee amounts from a spreadsheet.</li>
+</ol>
+<h2>9.4 Toolbar actions</h2>
+<ul>
+  <li><b>Cal TDS</b> &mdash; recalculate TDS for every row.</li>
+  <li><b>Transfer TDS</b> &mdash; mark the period's TDS as remitted, for records.</li>
+  <li><b>Challan</b> &mdash; PDF summary of total PF, ESI, Professional Tax and TDS for statutory deposit.</li>
+  <li><b>Clear Col</b> &mdash; clear one chosen column across all rows before re-entering.</li>
+  <li><b>Export</b> &mdash; Net Pay to Excel; <b>Payslips</b> shortcut to download payslips.</li>
+</ul>
+<div class="box warn">Challan and Form 16 are computed from your payroll records for convenience. Always verify figures before filing.</div>
+
+
+</section>
+<section id="s10"><h1>10. Payslips &amp; Payslip Designer</h1>
+<h2>10.1 Payslips <span class="new">UPDATED</span></h2>
+<p><span class="menu">Payroll &rsaquo; Payslips</span> lists every processed payslip for the period. The redesigned payslip shows the company logo (prominent) with a modest company name, income and deduction heads, loan details, amount in words and a footer disclaimer.</p>
+<ul>
+  <li>Click a row to <b>preview</b>; then <b>Download PDF</b>, <b>Download Word</b> or <b>Print</b>.</li>
+  <li>Tick several employees for the <b>Bulk Export Wizard</b> &mdash; many employees and months in one ZIP.</li>
+  <li><b>Email Selected</b> <span class="new">NEW</span> &mdash; tick employees and click it to email each their payslip as a PDF attachment (Section 15).</li>
+</ul>
+<h2>10.2 Payslip Designer <span class="new">NEW</span></h2>
+<p><span class="menu">Masters &rsaquo; Payslip Designer</span> is an optional drag-and-drop editor for your own payslip layout. The standard layout is used until you save a design.</p>
+<ol class="steps">
+  <li>Click a field in the left list to add it to the page, or add free text.</li>
+  <li>Drag an element to move it; use the bottom-right handle to resize.</li>
+  <li>In the property panel set exact X / Y / Width / Height (mm), font, size, weight, alignment and colour, and whether the field shows a label.</li>
+  <li>Click <b>Live Preview</b> to see it with a real saved payroll record.</li>
+  <li>Click <b>Save</b>. Use <b>Reset to Default</b> to return to the built-in layout, or <b>Remove from payslip</b> to delete the selected element.</li>
+</ol>
+<p>Saved designs apply to the Payslips screen, Net Pay downloads and bulk ZIP exports alike &mdash; all use one shared payslip generator.</p>
+
+
+</section>
+<section id="s11"><h1>11. Reports &amp; Form 16</h1>
+<p><span class="menu">Reports &rsaquo; All Reports</span> opens the Reports Center.</p>
+<h2>11.1 Ready-made reports</h2>
+<table class="wide-first">
+<tr><th style="width:30%">Report</th><th>Description</th></tr>
+<tr><td>Employee Master List</td><td>Active employees with personal and salary details</td></tr>
+<tr><td>Monthly Attendance Log</td><td>Detailed daily attendance status</td></tr>
+<tr><td>Salary Sheet</td><td>Monthly payroll with all heads and deductions</td></tr>
+<tr><td>PF &amp; ESI Statement</td><td>Contribution report</td></tr>
+<tr><td>Bank Advice</td><td>Net-pay list for bank transfer</td></tr>
+<tr><td>TDS &amp; Tax Report</td><td>Tax deductions and projections</td></tr>
+<tr><td>Yearly Salary Register</td><td>Annual summary per employee</td></tr>
+<tr><td>Department Summary</td><td>Headcount and cost by department</td></tr>
+</table>
+<p>Reports filter by month, year and employee, and export to Excel/CSV.</p>
+<h2>11.2 Form 16</h2>
+<ol class="steps">
+  <li>Select Form 16 in the Reports Center.</li>
+  <li>Choose the Employee and Financial Year.</li>
+  <li>Click <b>Generate Form 16 PDF</b>.</li>
+</ol>
+<p>This is a simplified system-generated certificate for internal use, drawn from saved payroll records &mdash; not a substitute for the statutory e-filed Form 16.</p>
+<h2>11.3 Custom Report Builder</h2>
+<p>Pick a data source (Employees, Payroll History, Attendance Logs), tick the columns (Select All / Deselect All), and export the resulting table.</p>
+
+
+</section>
+<section id="s12"><h1>12. Documents &amp; Letters</h1>
+<p><span class="menu">Documents &rsaquo; Letters</span> generates offer, appointment and other letters by merging your templates with a selected employee's data.</p>
+<ol class="steps">
+  <li>Create or edit a <b>template</b>; insert placeholders using the tag buttons, for example <code>{{name}}</code>.</li>
+  <li>Select the employee and the letter, then preview.</li>
+  <li>Use <b>Print</b>, <b>Download PDF</b> / <b>Word</b>, or <b>Email</b> <span class="new">NEW</span> to send it to the employee's registered address.</li>
+</ol>
+<p>Available tags include: Full/First/Last Name, Employee Code, Designation, Department, Branch, DOB, DOJ, Exit Date, Monthly Salary, Salary From, Father Name, Gender, Blood Group, Phone, Email, Full Address, City, PAN, Aadhaar, PF, ESI, UAN, Bank Name, Account No., IFSC, Emergency Contact, Company Name and Current Date. Two image tags, <b>Signature</b> and <b>Photo</b>, insert the employee's saved signature or photo. Reference-number prefix and sequencing are set in Settings &rsaquo; Document Config.</p>
+
+
+</section>
+<section id="s13"><h1>13. Other Modules &amp; Availability</h1>
+<p>Everything reachable from the ribbon is described in Sections 3&ndash;12 and 14&ndash;18. Two further points:</p>
+<div class="box warn"><b class="t">Recruitment, Helpdesk, Performance and Assets screens.</b> Earlier guides described these modules. In version 3.2 their screens are not connected to the ribbon or the Dashboard, so they cannot be opened from the application. If your organisation relies on them, contact your MpxHR implementation partner.</div>
+<ul>
+  <li><b>Asset data</b> is still available as a table you can export to and import from Google Sheets (Section 16) and view or correct in the DB Viewer (Section 18).</li>
+  <li>Module visibility for Masters, Attendance, Payroll, Reports and Documents is controlled in <span class="menu">Settings &rsaquo; Module Rights</span>.</li>
+  <li>Employee-role logins see only their own attendance, leave and payslips (Section 20).</li>
+</ul>
+
+
+</section>
+<section id="s14"><h1>14. Importing Data &amp; Files <span class="new">UPDATED</span></h1>
+<p>Employees and Attendance can be imported from Excel. Both now run a <b>pre-import validation</b> and show the findings in a preview window before anything is saved.</p>
+<h2>14.1 Steps</h2>
+<ol class="steps">
+  <li>Click <b>Template</b> (Employees) or <b>Tpl</b> (Attendance) to download the correct sheet layout, and fill it in.</li>
+  <li>Click <b>Import</b> / <b>Imp</b> and choose the file.</li>
+  <li>Read the <b>preview</b>: the row table plus a list of warnings and errors.</li>
+  <li>If there are errors, tick the acknowledgement checkbox to unlock <b>Import</b> &mdash; or cancel, fix the sheet and try again. Warnings never block.</li>
+</ol>
+<h2>14.2 What is checked</h2>
+<table class="wide-first">
+<tr><th style="width:18%">Import</th><th>Checks</th></tr>
+<tr><td>Employees</td><td>Duplicate Employee Code within the file; the same email on rows with different names; missing First Name; unreadable DOB or date of joining</td></tr>
+<tr><td>Attendance</td><td>Unknown employee codes; unreadable dates; duplicate employee + date pairs; unrecognised status values; missing Employee Code or Status</td></tr>
+</table>
+<h2>14.3 Good to know</h2>
+<ul>
+  <li><b>Dates</b> are read as DD/MM/YYYY (and Excel date serial numbers) &mdash; never silently as US-style MM/DD.</li>
+  <li>Employees sharing one email (a supervisor's, for example) are <b>no longer merged</b>: email only counts as a match when the first name also matches.</li>
+  <li>Salary columns such as <i>BasicSalary</i> and <i>SpecialAllowance</i> import into the salary structure that payroll reads.</li>
+  <li>Dropdown/Yes-No custom field values are trimmed and matched ignoring case.</li>
+  <li>Payroll itself has no Excel import &mdash; PF, ESI, TDS and Net Pay are computed from settings and attendance. Only salary-head amounts can be loaded in bulk (Section 9.3).</li>
+</ul>
+
+
+
+<h2>14.4 Photos, Signatures &amp; Documents <span class="new">NEW</span></h2>
+<p>Employee photos, signatures and documents (Aadhaar, PAN, certificates ...) can be added one at a time in the employee form, or <b>in bulk</b> with <span class="menu">Masters &rsaquo; Employees &rsaquo; Import Files</span>. Bulk import works from a local folder, an Excel sheet, or a Google Drive folder, and always shows a preview before anything is saved.</p>
+<h3>One employee</h3>
+<ul>
+  <li><b>Photo</b> and <b>Signature</b>: use the Browse buttons beside the employee form. The picture is checked against the current limits and scaled down if very large.</li>
+  <li><b>Documents</b>: open an existing employee, type a document type (or pick one from the list), click <b>Upload File</b>. Use the eye icon to open a document and the bin icon to delete it.</li>
+</ul>
+<h3>Many employees &mdash; Import Files</h3>
+<ol class="steps">
+  <li>Click <b>Import Files</b> in the Employees toolbar and choose the source below.</li>
+  <li>Click <b>Preview</b>. Every file is listed with the employee it matches, where it will go (Photo, Signature or Document: type), its size, and a note if it will be skipped.</li>
+  <li>Click <b>Import</b>. Skipped files are left out; the rest are saved, and a final summary lists anything that failed.</li>
+</ol>
+<table class="wide-first">
+<tr><th style="width:22%">Source</th><th>How files are matched to employees</th></tr>
+<tr><td>Local folder</td><td>By file name, starting with the employee code: <b>EMP001.jpg</b> or <b>EMP001_photo.jpg</b> = photo; <b>EMP001_signature.png</b> = signature; <b>EMP001_Aadhaar.pdf</b> = document of type &ldquo;Aadhaar&rdquo;. A sub-folder per employee also works: <b>EMP001/photo.jpg</b>, <b>EMP001/PAN.pdf</b>.</td></tr>
+<tr><td>Excel sheet</td><td>One row per employee. Columns: <b>Employee Code</b>, then <b>Photo</b>, <b>Signature</b> and one column per document type. Each cell is a file name (looked up in the folder you choose), a full path, or a Google Drive link. A template can be downloaded in the wizard. Excel cannot hold the files themselves, only their names or links.</td></tr>
+<tr><td>Google Drive folder</td><td>Put the files in one Drive folder using the same naming as a local folder. Choose the Google connection and give the folder link, id or name. MpxHR reads and downloads the files through your Google script.</td></tr>
+</table>
+<div class="box warn"><b class="t">Google script update needed.</b> Drive import needs the latest script. In Settings &rsaquo; Google Sync &rsaquo; Connect a Sheet, copy the script, paste it over the old one in Apps Script, deploy again, and approve the Drive permission if Google asks. The folder must be accessible to the Google account that owns the script. A Google Form cannot be created with a file-upload question by the script; if you add one by hand in the Form editor, Google stores the uploads in Drive and the response sheet contains links, which the Excel source can use.</div>
+<h3>Limits &mdash; set by you</h3>
+<p>Open <span class="menu">Masters &rsaquo; Settings &rsaquo; Files &amp; Uploads</span> to choose, separately for <b>Photo</b>, <b>Signature</b> and <b>Documents</b>, the <b>maximum size</b> (0.05 to 50 MB) and the <b>allowed file types</b> (comma-separated, no dots, for example <i>pdf, docx, jpg</i>). The limits apply to every route &mdash; employee form, folder, Excel and Drive &mdash; and files outside them are listed as skipped with the reason. Photo and signature accept picture types only; program and script files (exe, bat, js, html and similar) are always refused.</p>
+<p>Signature and photo can be placed in letters with the <b>Signature (image)</b> and <b>Photo (image)</b> tag buttons in the letter editor (Section 12).</p>
+
+</section>
+<section id="s15"><h1>15. Email Setup &amp; Automatic Emails <span class="new">NEW</span></h1>
+<p>MpxHR can email payslips and letters and send automatic notifications. It is configured once for the whole app at <span class="menu">Masters &rsaquo; Settings &rsaquo; Email</span>, where a built-in Setup Guide also explains each step.</p>
+<h2>15.1 Choose a provider</h2>
+<table class="wide-first">
+<tr><th style="width:24%">Provider</th><th>When to use</th></tr>
+<tr><td>SMTP server</td><td>Recommended. Gmail, Outlook / Microsoft 365, Zoho, Yahoo or your company mail server. One-click presets fill host, port and security.</td></tr>
+<tr><td>Google account</td><td>When SMTP or App Passwords are not possible. Uses the Google Sync script; no password is stored in MpxHR.</td></tr>
+</table>
+<h2>15.2 Gmail via SMTP</h2>
+<ol class="steps">
+  <li>In your Google Account &rsaquo; Security, turn on <b>2-Step Verification</b>.</li>
+  <li>Search <b>App passwords</b>, create one named &ldquo;MpxHR&rdquo; and copy the 16-letter code.</li>
+  <li>In MpxHR click the <b>Gmail</b> preset. Username = full Gmail address; Password = the App Password (not your normal password).</li>
+  <li>Fill From Name and From Email (use the same address), click <b>Save Email Settings</b>.</li>
+  <li>Type your own address beside <b>Send Test</b> and click it. If it arrives, everything else will work.</li>
+</ol>
+<p>Outlook: use the <b>Outlook / 365</b> preset (smtp.office365.com, port 587, STARTTLS); your IT admin may need to enable Authenticated SMTP for the mailbox. Other hosts: port 587 with STARTTLS, or 465 with SSL/TLS.</p>
+<h2>15.3 What can be emailed</h2>
+<table class="wide-first">
+<tr><th style="width:22%">Email</th><th>How it is sent</th></tr>
+<tr><td>Payslips</td><td>Payslips screen &rarr; tick employees &rarr; <b>Email Selected</b> (PDF attached)</td></tr>
+<tr><td>Letters</td><td>Letters screen &rarr; choose employee and letter &rarr; <b>Email</b></td></tr>
+<tr><td>Leave decision</td><td>Automatic on Approve / Reject, if the &ldquo;Automatic Emails&rdquo; box is ticked</td></tr>
+<tr><td>Birthday wishes</td><td>Automatic, once a day when MpxHR is opened, if ticked</td></tr>
+</table>
+<div class="box warn">Each employee needs a valid <b>Email</b> in their profile; others are skipped and listed as failed. Gmail limits a normal account to about 500 emails a day.</div>
+<h2>15.4 Email templates</h2>
+<p>Edit subject and body for Payslip, Letter, Leave Approved, Leave Rejected and Birthday under <b>Email Templates</b>, then <b>Save Templates</b>. Placeholders are replaced when sending:</p>
+<table class="wide-first">
+<tr><th style="width:24%">Template</th><th>Placeholders</th></tr>
+<tr><td>Payslip</td><td>{name} {month} {company}</td></tr>
+<tr><td>Letter</td><td>{name} {letter_type} {company}</td></tr>
+<tr><td>Leave approved / rejected</td><td>{name} {leave_type} {from} {to} {days} {company}</td></tr>
+<tr><td>Birthday</td><td>{name} {company}</td></tr>
+</table>
+<h2>15.5 Email troubleshooting</h2>
+<table class="wide-first">
+<tr><th style="width:34%">Message</th><th>Fix</th></tr>
+<tr><td>Invalid login / not accepted</td><td>Gmail needs an App Password; check the username is the full address</td></tr>
+<tr><td>Connection timeout / ECONNREFUSED</td><td>Wrong host/port or firewall; try 587 + STARTTLS or 465 + SSL/TLS</td></tr>
+<tr><td>Wrong version number / SSL error</td><td>Security must match the port: 587 = STARTTLS, 465 = SSL/TLS</td></tr>
+<tr><td>Lands in spam</td><td>Use a From Email matching the login account</td></tr>
+<tr><td>Unknown action: sendMail</td><td>The deployed Google script is old &mdash; recopy and redeploy the latest one</td></tr>
+</table>
+
+
+</section>
+<section id="s16"><h1>16. Google Sync &amp; Form Builder <span class="new">NEW</span></h1>
+<p><span class="menu">Masters &rsaquo; Settings &rsaquo; Google Sync</span> connects MpxHR to a Google Sheet through a small script that runs <b>under your own Google account</b>. There is no Google sign-in inside MpxHR, no Cloud project and nothing to install; the shared secret is stored encrypted on your PC.</p>
+<h2>16.1 Connect a Sheet</h2>
+<ol class="steps">
+  <li>Click <b>Connect a Sheet</b> and follow the on-screen instructions to copy the script into Apps Script from your Sheet and deploy it.</li>
+  <li>Paste the resulting web-app link and secret back into MpxHR.</li>
+</ol>
+<div class="box tip">If you connected before email was added, recopy the <b>latest script</b> over the old one and redeploy so email sending works.</div>
+<div class="box tip">Whenever MpxHR needs a newer script (for the Joiner Form or Google Forms) it opens a short guide: copy the script, paste it in Apps Script, <b>Deploy &rsaquo; Manage deployments &rsaquo; pencil &rsaquo; New version</b>, allow the permission, then press <b>Check now</b>. Never choose "New deployment": that changes your link.</div>
+<h2>16.2 Table Sync</h2>
+<p>Click <b>New Sync</b> to link a database table with a Sheet tab. Tables available: Employees, Departments, Designations, Attendance, Loans, Assets (and your custom tables). Syncs can be <b>edited</b> in place.</p>
+<ul>
+  <li><b>Export</b> &mdash; write a table to a tab.</li>
+  <li><b>Import</b> &mdash; rows pulled from the tab go to the <b>Review Queue</b>. Column mapping is guessed automatically and you can adjust it.</li>
+  <li>A <b>preview</b> shows what a sync will do before it runs.</li>
+</ul>
+<h2>16.3 Review Queue</h2>
+<p>Nothing becomes a real record until you approve it. Each mapping gets its own table; cells with problems are highlighted amber with a warning icon (hover for the reason).</p>
+<table class="wide-first">
+<tr><th style="width:30%">Checked on import</th><th>Behaviour</th></tr>
+<tr><td>Dates (DOB, joining)</td><td>Read as DD/MM/YYYY and stored in a standard format; invalid values are flagged</td></tr>
+<tr><td>Duplicate keys in the same sheet</td><td>Flagged on the row (for example, one email on two employees) instead of being silently skipped</td></tr>
+<tr><td>Employee last name</td><td>Optional</td></tr>
+</table>
+<h2>16.4 Form Builder</h2>
+<p>Design a <b>Google Form</b> from any table's fields &mdash; or link several tables (for example Employee + Loan) so one submission fills them all. Generate the form through the connected Sheet, share the link, and review incoming responses in a section-by-section preview before approving them into real records.</p>
+
+
+</section>
+<section id="s17"><h1>17. Custom Fields &amp; Custom Tables <span class="new">NEW</span></h1>
+<p><span class="menu">Masters &rsaquo; Settings &rsaquo; Custom Fields</span> lets you extend MpxHR without any code change.</p>
+<h2>17.1 Add a field to an existing form</h2>
+<ol class="steps">
+  <li>Choose the <b>Table</b> (for example Employees).</li>
+  <li>Enter a <b>Label</b>, choose a <b>Type</b> and mark it <b>Required</b> if needed.</li>
+  <li>Click <b>Add Field</b>. It appears on that table's forms immediately.</li>
+</ol>
+<table>
+<tr><th style="width:22%">Type</th><th>Use</th></tr>
+<tr><td>Text / Long Text</td><td>Short or multi-line text</td></tr><tr><td>Number</td><td>Numeric value</td></tr>
+<tr><td>Date</td><td>Date picker</td></tr><tr><td>Yes / No</td><td>Tick box</td></tr>
+<tr><td>Dropdown</td><td>Fixed list &mdash; give comma-separated options, e.g. A, B, C</td></tr>
+<tr><td>File / Image</td><td>Upload a document or picture</td></tr>
+</table>
+<h2>17.2 Create a new table</h2>
+<p>Under <b>Create New Table</b> enter a name (for example <i>Vendors</i> or <i>Training Records</i>) and click <b>Create Table</b>. Add fields to it as above, then add and view its <b>Records</b> directly on this screen. Existing fields can be edited, and custom tables can be deleted.</p>
+
+
+</section>
+<section id="s18"><h1>18. Settings Reference</h1>
+<p><span class="menu">Masters &rsaquo; Settings</span> has a left-hand menu of tabs:</p>
+<table class="wide-first">
+<tr><th style="width:24%">Tab</th><th>What you configure</th></tr>
+<tr><td>General</td><td>Theme and date-format preferences</td></tr>
+<tr><td>Branding</td><td>Application name and logo shown across the app and on login</td></tr>
+<tr><td>Notifications</td><td>Birthday and work-anniversary desktop notifications</td></tr>
+<tr><td>Salary Components</td><td>Company-wide earning and deduction defaults</td></tr>
+<tr><td>Payroll &amp; Leave</td><td>Month start day, LOP basis, overtime multiplier, default probation days, LWF contribution and frequency, leave accrual rules, PL/CL monthly credit, RH annual quota</td></tr>
+<tr><td>Document Config</td><td>Letter reference prefix and sequencing</td></tr>
+<tr><td>Database Maintenance</td><td>Manual and automatic backups, restore (Section 19)</td></tr>
+<tr><td>DB Viewer <span class="new">NEW</span></td><td>Administrator-only direct view and edit of any database table</td></tr>
+<tr><td>Email <span class="new">NEW</span></td><td>Provider, automatic emails, templates (Section 15)</td></tr>
+<tr><td>Google Sync <span class="new">NEW</span></td><td>Sheets, table syncs, review queue, Form Builder (Section 16)</td></tr>
+<tr><td>Custom Fields <span class="new">NEW</span></td><td>Extra fields and tables (Section 17)</td></tr>
+<tr><td>License <span class="new">NEW</span></td><td>Trial or plan status, employee and company usage, and the box to enter or renew a license key</td></tr>
+<tr><td>Files &amp; Uploads <span class="new">NEW</span></td><td>Maximum size and allowed file types for photos, signatures and documents (Section 14.4)</td></tr>
+<tr><td>Security &amp; Users</td><td>Admin password, master recovery password, user accounts</td></tr>
+<tr><td>Module Rights</td><td>Show or hide whole ribbon modules for this installation</td></tr>
+</table>
+<h2>DB Viewer</h2>
+<p>Pick a table, search across all columns, page through rows and use <b>Add Row</b> or the row editor. It bypasses the validation of normal screens, so a wrong edit (for example an unhashed password) can break data &mdash; <b>take a backup first</b> and use it only for corrections you fully understand.</p>
+
+
+</section>
+<section id="s19"><h1>19. Backup, Restore &amp; Data Security</h1>
+<p><span class="menu">Masters &rsaquo; Settings &rsaquo; Database Maintenance</span> shows the date and contents of your last backup at the top. A card turns <b>green</b> when the last backup is recent and <b>amber</b> when it is a week old or more, or when none has been taken.</p>
+<h2>19.1 Back up now</h2>
+<ul>
+  <li><b>Everything (data + documents)</b> &mdash; a .zip with the database and every uploaded file (documents, joiner files). This is the safest choice.</li>
+  <li><b>Data only</b> &mdash; a compact .sqlite file with all records. Type a password first to save it encrypted (.enc). Remember the password: without it an encrypted backup cannot be opened.</li>
+  <li>MpxHR takes a consistent copy of the database even while you are working, checks the file after saving, and tells you what it holds (for example "44 employees, 1 company, 123 payroll rows").</li>
+  <li>Save a copy on a pen drive or in a Google Drive / OneDrive folder, not only on this computer.</li>
+</ul>
+<h2>19.2 Automatic backup</h2>
+<ul>
+  <li>Tick <b>Back up automatically every time I close MpxHR</b>, and optionally <b>Also include uploaded documents</b>.</li>
+  <li><b>Save in folder</b> &mdash; choose a folder (a Drive/OneDrive-synced one keeps a copy in the cloud). <b>Open</b> shows it in Windows. If the folder is not available (for example a pen drive that is unplugged) the backup is saved in a safe default folder instead of being lost.</li>
+  <li><b>Keep the latest</b> &mdash; how many automatic backups to keep (1 to 200). Older ones are deleted.</li>
+  <li><b>Back up now to this folder</b> makes an automatic-style backup immediately.</li>
+</ul>
+<h2>19.3 Recent automatic backups</h2>
+<p>The list shows the newest automatic backups with date and size. Click <b>Restore</b> on one to bring it back without browsing for a file.</p>
+<h2>19.4 Restore from a file</h2>
+<p>Click <b>Choose a backup file</b> (.zip, .sqlite or .enc) and type the password for an encrypted one. Restoring replaces <b>all</b> current data and documents.</p>
+<ul>
+  <li>MpxHR first checks the file: the password, that it is a MpxHR database, and its integrity. A wrong password or a damaged file stops the restore and changes nothing.</li>
+  <li>A <b>safety copy of the data you had</b> is saved in the <i>backups &rsaquo; before-restore</i> folder (the last five are kept), so a mistaken restore can be undone.</li>
+  <li>Files from a zip are written only inside MpxHR's uploads folder. Afterwards MpxHR <b>restarts</b> so every screen loads the restored data.</li>
+</ul>
+<h2>19.5 Where is my data?</h2>
+<p>In the installed program the database is <b>%APPDATA%\mpxhr-desktop\database.sqlite</b> and the uploaded files are in the <b>uploads</b> folder beside it. Backups made with MpxHR 4.1.x or older did <b>not</b> reliably include the database, so after upgrading to 4.2 take a new <b>Everything</b> backup straight away.</p>
+<div class="box warn">Take a fresh backup before restoring, before upgrading MpxHR and before any large import.</div>
+<h2>19.6 Built-in protection</h2>
+<ul>
+  <li>Passwords are stored hashed; the Google Sync secret is encrypted with the operating system's secure storage.</li>
+  <li>Administrative actions (deleting records, restore, DB Viewer, raw queries) need an active administrator session.</li>
+  <li>Only one copy of MpxHR can run at a time, protecting the database from write conflicts.</li>
+  <li>Company data is isolated per company; activity is written to a local diagnostic log for support.</li>
+  <li><span class="menu">Masters &rsaquo; Data Security</span> opens a short in-app guide to these practices.</li>
+</ul>
+
+
+</section>
+<section id="s20"><h1>20. User Roles, Passwords &amp; Recovery</h1>
+<table class="wide-first">
+<tr><th style="width:20%">Role</th><th>Access</th></tr>
+<tr><td>Administrator</td><td>All modules, all employees' data, payroll, settings, backups, user management</td></tr>
+<tr><td>Employee</td><td>Self-service: own attendance, leave application and payslips</td></tr>
+</table>
+<p>Create employee logins in <span class="menu">Settings &rsaquo; Security &amp; Users</span>, linking each to an employee record.</p>
+<h2>Changing the admin password</h2>
+<p>In Security &amp; Users type the new password twice and click <b>Update Profile</b>.</p>
+<h2>Master recovery password <span class="new">NEW</span></h2>
+<p>An administrator can set a backup password that logs in as <b>any</b> user &mdash; enter the person's username as usual and the master password instead of theirs. It lets you recover access when someone forgets a password. Leave the field empty and save to remove it. The tab shows whether one is currently set.</p>
+<div class="box warn">Keep the master password secret and private &mdash; anyone who knows it can sign in as any user.</div>
+
+
+</section>
+<section id="s21"><h1>21. Keyboard Shortcuts &amp; Tips</h1>
+<table>
+<tr><th style="width:22%">Shortcut</th><th>Action</th></tr>
+<tr><td><kbd>Ctrl</kbd>+<kbd>S</kbd></td><td>Save the current form (works while typing)</td></tr>
+<tr><td><kbd>Ctrl</kbd>+<kbd>N</kbd></td><td>New record</td></tr>
+<tr><td><kbd>Ctrl</kbd>+<kbd>E</kbd></td><td>Edit the selected record</td></tr>
+<tr><td><kbd>Del</kbd></td><td>Delete the selected record(s)</td></tr>
+<tr><td><kbd>Ctrl</kbd>+<kbd>R</kbd></td><td>Refresh the current screen</td></tr>
+<tr><td><kbd>Ctrl</kbd>+<kbd>P</kbd></td><td>Print</td></tr>
+<tr><td><kbd>Esc</kbd></td><td>Close the open dialog (works while typing)</td></tr>
+<tr><td><kbd>Alt</kbd>+<kbd>1</kbd>&ndash;<kbd>4</kbd></td><td>Switch between the first four ribbon tabs</td></tr>
+</table>
+<p>Shortcuts other than Save and Esc are paused while your cursor is inside a text box. Click the keyboard icon in the title bar to see the list in the app.</p>
+<h2>Good habits</h2>
+<ul>
+  <li>Check the Company / Financial Year / Month in the context bar before every entry.</li>
+  <li>Mark attendance completely (use Auto-Fill) before calculating payroll.</li>
+  <li>Close a month once payroll is final.</li>
+  <li>Back up before bulk deletes, imports, restores or DB Viewer edits.</li>
+  <li>Preview imports carefully &mdash; fix errors in the sheet rather than overriding them.</li>
+</ul>
+
+
+</section>
+<section id="s22"><h1>22. Onboarding &amp; the Joiner Form <span class="new">NEW</span></h1>
+<p><span class="menu">Masters &rsaquo; Onboarding</span> helps you receive a new person properly <b>before</b> an employee record exists: collect their details and documents, follow a joining checklist, and turn them into an employee with one click.</p>
+
+<h2>22.1 Add a new joiner</h2>
+<ol class="steps">
+  <li>Click <b>New Joiner</b> and enter the name, email, phone, department, designation, branch and expected joining date.</li>
+  <li>Save. The standard <b>joining checklist</b> is created for that person (documents to collect, HR steps, IT and admin steps).</li>
+  <li>The list shows each joiner with a progress bar and a status: <b>Pending</b>, <b>In progress</b> or <b>Completed</b>. The cards at the top count them.</li>
+</ol>
+
+<h2>22.2 The checklist</h2>
+<ul>
+  <li>Select a joiner and click <b>Checklist</b> (or double-click the row). Tick a step when it is done, or add and remove your own steps. The status changes by itself.</li>
+  <li><b>Checklist Template</b> edits the standard list. Write one step per line as <i>Group | Task</i>. It applies to <b>new</b> joiners; people already added keep their list. <b>Restore default</b> brings back the original steps.</li>
+  <li><b>Print Form</b> prints a joining form with blank lines for the joiner to fill by hand, plus the checklist, with signature lines.</li>
+</ul>
+
+<h2>22.3 Make Employee</h2>
+<p>Select the joiner and click <b>Make Employee</b>. MpxHR creates the employee with the name, email, phone, company, branch, department, designation and joining date, ticks the "Employee record created" step, and copies everything the joiner sent through the form (see below): profile fields, custom fields, photo, signature and documents. Then open <span class="menu">Masters &rsaquo; Employees</span> to add the employee code, salary and the remaining details. The employee limit of your license applies as usual.</p>
+
+<h2>22.4 The Joiner Form (online link)</h2>
+<p>Let the joiner fill in their own details and upload documents from a phone. It runs on <b>your own Google Sheet script</b> (the same one used by Google Sync, Section 16). MpxHR never stores your Google login.</p>
+<ol class="steps">
+  <li><b>Choose the questions.</b> <span class="menu">Onboarding &rsaquo; Joiner Form &rsaquo; Questions &amp; documents</span>. Tick what the joiner should upload (photo, Aadhaar copy, PAN copy, bank proof, certificates, relieving letter ...) and fill in (PAN number, UAN, date of birth, address, bank details ...). Name, mobile, email, department, designation, joining date and notes are always asked. Tick <b>Must fill</b> for compulsory ones. You can also add your own question.</li>
+  <li><b>Get the link.</b> Click <b>Get link / Share</b>. The first time (and after an MpxHR update) a short five-step guide appears to paste the new script into your Google Sheet; the <b>Check now</b> button tells you which step is still missing. Then copy the link or send it by WhatsApp or email.</li>
+  <li><b>Joiner fills the form.</b> The answer is saved as a new row in the tab <b>New Joiners</b> of your Sheet; uploaded files go to a private folder <b>MpxHR Joiner Uploads</b> in your Google Drive.</li>
+  <li><b>See what came in.</b> <b>View responses</b> lists every submission (read-only): new ones and already-added ones, with answers and document names. Nothing is added to Onboarding yet.</li>
+  <li><b>Add them.</b> <b>Add new joiners</b> downloads the documents to this computer, creates each joiner with the checklist, and ticks the matching checklist steps (for example "Aadhaar card copy"). People already in the list (same email or phone) are skipped.</li>
+</ol>
+
+<h2>22.5 Where each answer goes, checks and limits</h2>
+<p>Open <b>Options</b> on a question to change the defaults, which are already sensible:</p>
+<table class="wide-first">
+<tr><th style="width:26%">Setting</th><th>What it does</th></tr>
+<tr><td>Save the answer to</td><td>Keep with the joiner only; an Employee profile field (PAN, Aadhaar, bank, address ...) or an Employee custom field; for files: the employee photo, signature or a document type. Applied when you click <b>Make Employee</b>.</td></tr>
+<tr><td>Check the answer is</td><td>PAN (ABCDE1234F), Aadhaar (12 digits), IFSC, UAN (12 digits), PIN code (6 digits), mobile (10 digits), bank account (6&ndash;20 digits), email, letters only, digits only. Spaces are tidied and PAN/IFSC are made capital automatically.</td></tr>
+<tr><td>Longest answer, smallest / largest</td><td>Limits for text length and number ranges. Dropdown answers must be one of the choices.</td></tr>
+<tr><td>Biggest file, allowed types</td><td>Per file question, up to <b>5 MB</b> (a Google script limit) and PDF, JPG, PNG or DOCX. A photo or signature can only be JPG or PNG. The limits in <span class="menu">Settings &rsaquo; Files &amp; Uploads</span> also apply when the file is brought in.</td></tr>
+<tr><td>Tick checklist step</td><td>Which checklist step becomes done when this answer or file arrives.</td></tr>
+</table>
+<p>The checks run three times &mdash; on the form page, in your script, and again in MpxHR &mdash; so a hand-made request cannot slip a bad value through.</p>
+<div class="box warn"><b class="t">The link is public, the data is not.</b> Anyone with the link can submit the form, but nobody can read the answers through it; they exist only in your Sheet and Drive. The same phone number cannot submit twice within a minute, and a hidden field blocks simple bots.</div>
+
+<h2>22.6 Google Form (advanced)</h2>
+<p>In <span class="menu">Onboarding &rsaquo; Joiner Form</span> you can also build a real Google Form (Section 16). It asks the fixed joiner fields and its answers wait in the review queue. It needs the extra Google Forms permission in your script and <b>cannot take file uploads</b>, so the online link above is recommended. Forms have <b>Preview</b> (shows the questions as they will be asked) and <b>Share</b> (copy the link, send it by WhatsApp or email).</p>
+
+
+</section>
+<section id="s23"><h1>23. Troubleshooting &amp; Support</h1>
+<table class="wide-first">
+<tr><th style="width:30%">Issue</th><th>What to try</th></tr>
+<tr><td>Forgot a password</td><td>Sign in with the master recovery password if one is set; otherwise contact your administrator or MpxHR support</td></tr>
+<tr><td>Payroll figures look wrong</td><td>Check Financial Year / Month, make sure attendance is complete, confirm the salary structure and salary-head flags, then refresh/recalculate before saving</td></tr>
+<tr><td>A module is missing from the ribbon</td><td>Check Settings &rsaquo; Module Rights</td></tr>
+<tr><td>Cannot open a second window</td><td>By design &mdash; only one copy of MpxHR runs at a time</td></tr>
+<tr><td>Financial Year dropdown lacks a year</td><td>It lists current year &minus;4 to +1 and selects today's year automatically</td></tr>
+<tr><td>Import preview shows errors</td><td>Fix duplicates, dates (DD/MM/YYYY) or unknown codes in the file and import again</td></tr>
+<tr><td>Emails fail</td><td>Use Send Test in Settings &rsaquo; Email and see Section 15.5; confirm the employee has an Email on file</td></tr>
+<tr><td>Google Sync errors</td><td>Make sure the latest script is deployed, the link and secret are correct, and you are online</td></tr>
+<tr><td>Joiner form shows "older version"</td><td>Click <b>Get link / Share</b> again and follow the five-step guide to paste the latest script, deploy a <b>New version</b> and allow the permission; then press <b>Check now</b></td></tr>
+<tr><td>Joiner form does not show my new questions</td><td>After changing questions press <b>Get link / Share</b> once to send them to the form</td></tr>
+<tr><td>A backup folder on a pen drive is not found</td><td>The backup is saved in the default folder instead; open <span class="menu">Database Maintenance</span> and press <b>Open</b> to see where it went</td></tr>
+<tr><td>Payslip layout looks off</td><td>In the Payslip Designer click Reset to Default, or adjust the element and use Live Preview</td></tr>
+</table>
+<div class="box">For further help use <b>Contact Support</b> (title bar or login screen) or reach out to your MpxHR implementation partner.</div>
+<p style="margin-top:30px;color:var(--muted);font-size:9pt;text-align:center;">MpxHR Enterprise &mdash; Desktop HRMS &middot; User &amp; Administrator Guide &middot; Version 4.1 &middot; &copy; MpxHR</p>
+
+</section></div></div></main>
+<footer class="ftr"><div class="wrap">
+<div class="cols">
+<div><div class="brand" style="color:#fff"><img src="assets/img/logo.png" alt="" width="32" height="32">MpxHR</div><p style="margin-top:10px"><span data-i18n="footer.about">Offline HR, attendance and payroll software for small and mid-sized organisations.</span></p></div>
+<div><h4>Product</h4><ul><li><a href="features.html">Features</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="download.html">Download</a></li><li><a href="releases.html">Release notes</a></li></ul></div>
+<div><h4>Learn</h4><ul><li><a href="tutorials.html">Tutorials</a></li><li><a href="docs.html">Documentation</a></li><li><a href="videos.html">Videos</a></li><li><a href="pricing.html#faq">FAQ</a></li></ul></div>
+<div><h4>Contact</h4><ul><li>Mithlesh Prasad</li><li><a href="https://wa.me/917519024725?text=Hello%2C%20I%20would%20like%20to%20know%20more%20about%20MpxHR.">WhatsApp 7519024725</a></li><li><a href="mailto:mithleshprasad58@gmail.com">mithleshprasad58@gmail.com</a></li></ul></div>
+</div>
+<div class="copy">&copy; 2026 MpxHR Enterprise &middot; v4.2.0 &middot; <a href="privacy.html">Privacy</a> &middot; <a href="terms.html">Terms</a></div>
+</div></footer>
+<a class="wa-float" href="https://wa.me/917519024725?text=Hello%2C%20I%20would%20like%20to%20know%20more%20about%20MpxHR." aria-label="Chat on WhatsApp" target="_blank" rel="noopener"><svg class="ic " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></a>
+<script src="assets/i18n.js"></script><script src="assets/app.js"></script>
+</body></html>
