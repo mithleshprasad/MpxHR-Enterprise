@@ -162,3 +162,13 @@ form.contact .btn:active{transform:translateY(3px)!important}
 /* contact icons in the footer + real WhatsApp logo on the floating button */
 .ftr li.ci a{display:inline-flex;align-items:center;gap:8px}.ftr li.ci .ic{flex:none}.ftr li.ci .ic-fill{color:#25d366}
 .wa-float .ic{width:30px;height:30px}.ic-fill{stroke:none}
+
+/* floating direct-download button above the WhatsApp one */
+.dl-float{position:fixed;right:18px;bottom:88px;z-index:60;height:56px;min-width:56px;padding:0 16px;border-radius:99px;background:linear-gradient(135deg,#4f46e5,#2563eb);color:#fff;display:flex;align-items:center;justify-content:center;gap:0;font-weight:700;font-size:.95rem;box-shadow:0 10px 24px -8px rgba(37,99,235,.7);overflow:hidden;transition:gap .2s,padding .2s,transform .15s}
+.dl-float:hover{text-decoration:none;gap:8px;transform:translateY(-2px)}
+.dl-float .ic{width:26px;height:26px;flex:none}
+.dl-float span{max-width:0;overflow:hidden;white-space:nowrap;transition:max-width .25s}
+.dl-float:hover span,.dl-float:focus-visible span{max-width:110px}
+@media(max-width:600px){.dl-float{right:14px;bottom:82px}}
+body:has(#dldirect) .dl-float{display:none}
+@media print{.dl-float{display:none}}
