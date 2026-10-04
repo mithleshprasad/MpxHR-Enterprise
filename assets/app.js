@@ -122,9 +122,8 @@
         var msg = 'Hello, I ' + (url ? 'downloaded' : 'want') + ' MpxHR Enterprise v' + f.getAttribute('data-ver') + '.\nName: ' + d.get('name') + '\nMobile: ' + d.get('phone') +
             (d.get('email') ? '\nEmail: ' + d.get('email') : '') + (d.get('company') ? '\nCompany: ' + d.get('company') : '') + '\nSize: ' + d.get('size') + (url ? '' : '\nPlease send me the installer.');
         if (url) {
-            var a = document.createElement('a'); a.href = url; a.setAttribute('download', ''); document.body.appendChild(a); a.click(); a.remove();
-            var n = document.getElementById('dlnote'); if (n) n.textContent = 'Your download has started. If it did not, use this link: ' + url;
-            setTimeout(function () { window.open('https://wa.me/' + f.getAttribute('data-wa') + '?text=' + encodeURIComponent(msg), '_blank'); }, 600);
+            var n = document.getElementById('dlnote'); if (n) n.textContent = 'Thank you. We will contact you on WhatsApp.';
+            window.open('https://wa.me/' + f.getAttribute('data-wa') + '?text=' + encodeURIComponent(msg), '_blank');
         } else {
             window.open('https://wa.me/' + f.getAttribute('data-wa') + '?text=' + encodeURIComponent(msg), '_blank');
         }
