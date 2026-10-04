@@ -158,3 +158,7 @@ input,select,textarea{border-radius:14px}
 .card:has(form) *{transform:none!important}
 form.contact .btn:hover{transform:translateY(-2px)!important}
 form.contact .btn:active{transform:translateY(3px)!important}
+
+/* contact icons in the footer + real WhatsApp logo on the floating button */
+.ftr li.ci a{display:inline-flex;align-items:center;gap:8px}.ftr li.ci .ic{flex:none}.ftr li.ci .ic-fill{color:#25d366}
+.wa-float .ic{width:30px;height:30px}.ic-fill{stroke:none}
