@@ -82,6 +82,7 @@
     }
     if (wide && !reduce) {
         document.querySelectorAll('.card, .plan').forEach(function (c) {
+            if (c.querySelector('form, input, select, textarea')) return;
             c.addEventListener('mousemove', function (ev) {
                 var r = c.getBoundingClientRect(), x = (ev.clientX - r.left) / r.width, y = (ev.clientY - r.top) / r.height;
                 c.style.setProperty('--ry', ((x - 0.5) * 12).toFixed(2) + 'deg');
