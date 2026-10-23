@@ -172,3 +172,49 @@ form.contact .btn:active{transform:translateY(3px)!important}
 @media(max-width:600px){.dl-float{right:14px;bottom:82px}}
 body:has(#dldirect) .dl-float{display:none}
 @media print{.dl-float{display:none}}
+
+/* ===== Theme: clean white + signal red + charcoal (remote-desktop-vendor style) ===== */
+:root{--bg:#fff;--surface:#fff;--ink:#2b2b2b;--muted:#6b6f76;--line:#e6e6e6;--brand:#ef443b;--brand2:#ff7a59;--soft:#fdecea;--shadow:0 6px 24px -10px rgba(0,0,0,.18);--r:12px;--hero1:#f5f5f5;--hero2:#fff;--charcoal:#2b2b2b}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#1c1c1c;--surface:#262626;--ink:#f2f2f2;--muted:#a8a8a8;--line:#3a3a3a;--soft:#3a2321;--hero1:#222;--hero2:#1c1c1c;--shadow:0 6px 24px -10px rgba(0,0,0,.7)}}
+:root[data-theme=dark]{--bg:#1c1c1c;--surface:#262626;--ink:#f2f2f2;--muted:#a8a8a8;--line:#3a3a3a;--soft:#3a2321;--hero1:#222;--hero2:#1c1c1c}
+body{background:var(--bg);font-family:"Segoe UI",Inter,system-ui,-apple-system,Roboto,"Noto Sans Devanagari",Arial,sans-serif}
+h1,h2,h3{letter-spacing:-.02em;font-weight:800}
+/* header: plain white bar, red active link */
+.hdr{background:var(--surface);backdrop-filter:none;border-bottom:1px solid var(--line)}
+.hdr .wrap{height:72px}
+.nav a{border-radius:6px;font-weight:600;color:var(--ink)}.nav a:hover{background:transparent;color:var(--brand)}.nav a.on{background:transparent;color:var(--brand);box-shadow:inset 0 -3px 0 var(--brand);border-radius:0}
+.lang{border-radius:99px}
+/* buttons: red, pill-shaped */
+.btn{border-radius:99px;background:var(--brand);box-shadow:none;padding:15px 30px}
+.btn:hover{background:#d93a31;transform:none;box-shadow:0 8px 18px -8px rgba(239,68,59,.7)}
+.btn.alt{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 2px var(--ink)}.btn.alt:hover{background:var(--ink);color:var(--surface);box-shadow:inset 0 0 0 2px var(--ink)}
+.btn.ghost{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 2px var(--ink)}.btn.ghost:hover{background:var(--ink);color:var(--surface)}
+.btn.wa{background:#25d366;box-shadow:none}.btn.wa:hover{background:#1fb858}
+/* hero: light grey, dark text, big headline */
+.hero{background:linear-gradient(180deg,var(--hero1),var(--hero2));color:var(--ink);padding:72px 0 48px}
+.hero h1{font-size:clamp(2.2rem,5vw,3.8rem);font-weight:800}
+.hero p.lead{color:var(--muted);font-size:1.2rem}
+.hero .eyebrow,.eyebrow{color:var(--brand)}
+.badge{background:var(--surface);border:1px solid var(--line);color:var(--ink)}
+.hero img.shot{filter:drop-shadow(0 24px 34px rgba(0,0,0,.22));border-radius:10px}
+.orb,.ring{display:none!important}
+.page-hero{background:linear-gradient(180deg,var(--hero1),var(--hero2));color:var(--ink);padding:54px 0;border-bottom:1px solid var(--line)}.page-hero p{color:var(--muted)}
+/* sections and cards: flat, light borders, red icon tiles */
+section.s.alt{background:#f5f5f5;border-block:0}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]) section.s.alt{background:#222}}
+:root[data-theme=dark] section.s.alt{background:#222}
+.card{border-radius:var(--r);box-shadow:none;border:1px solid var(--line)}
+a.card:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:var(--brand)}
+.card .ico{background:var(--brand);box-shadow:none;border-radius:10px}
+.stat b{color:var(--brand)}
+.plan.pop{border:2px solid var(--brand);box-shadow:var(--shadow)}.plan .tag{background:var(--brand)}
+.split img,.vid{border-radius:12px}
+.ticks .ic{color:var(--brand)}
+/* call-to-action band: charcoal with a red button */
+.band{background:var(--charcoal);animation:none;background-size:auto;color:#fff;border-radius:16px;box-shadow:none}.band p{color:#d0d0d0}
+.band .btn.alt,.band .btn.ghost{color:#fff;box-shadow:inset 0 0 0 2px #fff;background:transparent}.band .btn.alt:hover,.band .btn.ghost:hover{background:#fff;color:var(--charcoal)}
+/* footer: charcoal */
+.ftr{background:var(--charcoal);color:#b9b9b9;margin-top:0}.ftr a{color:#e6e6e6}.ftr a:hover{color:#fff}
+/* floating buttons */
+.dl-float{background:var(--brand)}
+.wa-float{animation:none}
