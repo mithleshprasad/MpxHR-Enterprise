@@ -285,3 +285,7 @@ section.s:has(.band) .wrap{max-width:none;padding:0}
  .nav a.buy{padding:12px 6px}
  .hdr .wrap{height:68px}
 }
+.btn.wa,.band .btn.wa{box-shadow:none}
+@media(max-width:900px){.ftr .cols{grid-template-columns:1fr 1fr;gap:28px}}
+@media(max-width:560px){.ftr .cols{grid-template-columns:1fr}.ftr h4{font-size:1.25rem}}
+html,body{overflow-x:hidden}
