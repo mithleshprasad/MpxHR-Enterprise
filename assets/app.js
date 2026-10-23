@@ -7,6 +7,18 @@
     var burger = $('.burger'), nav = $('.nav');
     if (burger) burger.addEventListener('click', function () { nav.classList.toggle('open'); burger.setAttribute('aria-expanded', nav.classList.contains('open')); });
 
+    // light / dark switch (top bar)
+    var tsw = $('#themesw');
+    function setTheme(t) {
+        document.documentElement.setAttribute('data-theme', t);
+        var tx = $('.swt'); if (tx) tx.textContent = t === 'dark' ? 'Dark Mode' : 'Light Mode';
+        if (tsw) tsw.classList.toggle('dark', t === 'dark');
+        store('mpx_theme', t);
+    }
+    var savedTheme = store('mpx_theme');
+    setTheme(savedTheme === 'dark' ? 'dark' : 'light');
+    if (tsw) tsw.addEventListener('click', function () { setTheme(document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark'); });
+
     // language (EN / HI)
     var dict = window.__I18N || {};
     function setLang(l) {
@@ -16,7 +28,7 @@
             if (el.__en === undefined) el.__en = el.innerHTML;
             if (l === 'hi' && dict[k]) el.innerHTML = dict[k]; else el.innerHTML = el.__en;
         });
-        var b = $('#langbtn'); if (b) b.textContent = l === 'hi' ? 'English' : 'हिंदी';
+        var b = $('#langtxt') || $('#langbtn'); if (b) b.textContent = l === 'hi' ? 'English' : 'हिंदी';
         store('mpx_lang', l);
     }
     var lb = $('#langbtn');
