@@ -164,6 +164,13 @@ describe('version and download', () => {
     assert.ok(r.length > MIN_INSTALLER_BYTES, `installer is only ${r.length} bytes`);
   });
 
+  const prev = (dl.match(/Need the earlier release\? <a href="(https:\/\/github\.com\/[^"]+)"/) || [])[1];
+  test('the earlier-release link, if shown, really exists', { skip: (OFFLINE || !prev) ? (prev ? 'OFFLINE=1' : 'no earlier release on the page') : false }, async () => {
+    const r = await request(prev);
+    assert.equal(r.status, 200, `earlier release link answered ${r.status}: ${prev}`);
+    assert.ok(r.length > MIN_INSTALLER_BYTES);
+  });
+
   const zip = (dl.match(/href="(https:\/\/github\.com\/[^"]*\.zip)"/) || [])[1];
   test('ZIP link, if shown, really exists', { skip: (OFFLINE || !zip) ? (zip ? 'OFFLINE=1' : 'no ZIP link on the page') : false }, async () => {
     const r = await request(zip);
