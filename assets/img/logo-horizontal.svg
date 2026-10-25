@@ -1,14 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 350" width="920" height="350" role="img" aria-label="MpxHR Enterprise">
-  <defs>
-    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f4694f"/><stop offset="0.55" stop-color="#ef443b"/><stop offset="1" stop-color="#f4943a"/></linearGradient>
-    <linearGradient id="s" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".28"/><stop offset="0.5" stop-color="#fff" stop-opacity="0"/></linearGradient>
-  </defs>
-  <g transform="translate(10,10) scale(0.6)">
-    <rect x="32" y="24" width="448" height="448" rx="108" fill="url(#g)"/>
-    <rect x="32" y="24" width="448" height="448" rx="108" fill="url(#s)"/>
-    <path d="M128 372 V196 a22 22 0 0 1 38-15 L256 282 L346 181 a22 22 0 0 1 38 15 V372" fill="none" stroke="#fff" stroke-width="54" stroke-linecap="round" stroke-linejoin="round"/>
-    <circle cx="256" cy="150" r="36" fill="#fff"/>
-  </g>
-  <text x="340" y="215" font-family="'Segoe UI Black','Segoe UI','Arial Black',Arial,sans-serif" font-weight="900" font-size="150" letter-spacing="-4"><tspan fill="#2b2b2b">Mpx</tspan><tspan fill="#ef443b">HR</tspan></text>
-  <text x="346" y="300" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-weight="600" font-size="38" letter-spacing="9" fill="#6b7280">ENTERPRISE</text>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 250" width="880" height="250" role="img" aria-label="MpxHR Enterprise"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f4694f"/><stop offset="1" stop-color="#ef443b"/></linearGradient></defs><g transform="translate(6,12) scale(1.9)"><rect x="8" y="14" width="104" height="70" rx="12" fill="#2b2b2b"/><rect x="48" y="84" width="24" height="12" fill="#2b2b2b"/><rect x="34" y="94" width="52" height="8" rx="4" fill="#2b2b2b"/><path d="M60 24 L88 34 V54 C88 66 76 74 60 80 C44 74 32 66 32 54 V34 Z" fill="url(#g)"/><path d="M45 62 V44 L60 56 L75 44 V62" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></g><text x="262" y="150" font-family="'Segoe UI Black','Segoe UI','Arial Black',Arial,sans-serif" font-weight="900" font-size="128" letter-spacing="-4"><tspan fill="#2b2b2b">Mpx</tspan><tspan fill="#ef443b">HR</tspan></text><text x="268" y="206" font-family="Segoe UI,Helvetica Neue,Arial,sans-serif" font-weight="600" font-size="31" letter-spacing="8" fill="#6b7280">ENTERPRISE</text></svg>
