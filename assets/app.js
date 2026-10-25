@@ -65,6 +65,7 @@
     if (f) f.addEventListener('submit', function (e) {
         e.preventDefault();
         var d = new FormData(f);
+        var ph = String(d.get('phone') || '').replace(/\D/g, '').replace(/^(91)?0*/, ''); if (ph.length === 10) d.set('phone', '+91 ' + ph);
         var msg = 'Hello, I am ' + d.get('name') + (d.get('company') ? ' from ' + d.get('company') : '') + '.\nInterested in: ' + d.get('topic') + '\nPhone: ' + d.get('phone') + '\n' + (d.get('message') || '');
         window.open('https://wa.me/' + f.getAttribute('data-wa') + '?text=' + encodeURIComponent(msg), '_blank');
     });
