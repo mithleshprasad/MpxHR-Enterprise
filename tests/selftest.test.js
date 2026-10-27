@@ -30,7 +30,7 @@ test('an untouched copy of the site passes (baseline)', () => assert.equal(runOn
 const BREAKS = {
   'a missing stylesheet': d => fs.rmSync(path.join(d, 'assets/site.css')),
   'a broken internal link': d => edit(d, 'index.html', h => h.replace('href="pricing.html"', 'href="no-such-page.html"')),
-  'a missing image': d => edit(d, 'index.html', h => h.replace('assets/img/hero.webp', 'assets/img/gone.webp')),
+  'a missing image': d => edit(d, 'index.html', h => h.replace('assets/img/s03_dashboard.webp', 'assets/img/gone.webp')),
   'a footer showing another version': d => edit(d, 'index.html', h => h.replace(/(class="copy">[\s\S]*?v)\d+\.\d+\.\d+/, '$19.9.9')),
   'a download link for another version': d => edit(d, 'download.html', h => h.replace(/\/download\/v\d+\.\d+\.\d+\//, '/download/v1.0.0/')),
   'a page without the viewport tag': d => edit(d, 'contact.html', h => h.replace(/<meta name="viewport"[^>]*>/, '')),

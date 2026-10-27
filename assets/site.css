@@ -373,3 +373,5 @@ html,body{overflow-x:hidden}
 @media(max-width:980px){.plans3{grid-template-columns:1fr;max-width:520px}.plans-q{grid-template-columns:1fr;max-width:520px}.qc ul{grid-template-columns:1fr}}
 @media(prefers-reduced-motion:reduce){.pc,.pc:hover{transition:none;transform:none}}
 .pc{padding-top:68px}.pc-off{top:24px}
+/* the home page now shows the real dashboard screenshot instead of the old 3D composition */
+.hero-img img.shot{border-radius:18px;border:1px solid var(--line);box-shadow:0 40px 80px -36px rgba(0,0,0,.6);background:var(--surface)}
