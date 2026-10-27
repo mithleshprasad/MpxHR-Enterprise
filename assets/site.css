@@ -337,3 +337,39 @@ html,body{overflow-x:hidden}
 .card.plan>h3{font-size:1.05rem;white-space:nowrap}
 .card.plan>.muted[data-i18n]{min-height:2.7em}
 @media(max-width:640px){.plans{grid-template-columns:1fr;margin-inline:0}.card.plan.pop{transform:none}}
+
+/* ===== Plan cards in the style of a hosting price table: struck-through old price, big new price, % off badge, one dark featured card ===== */
+.plans3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px;max-width:1180px;margin:8px auto 0;align-items:stretch}
+.pc{position:relative;display:flex;flex-direction:column;padding:34px 32px 30px;border-radius:20px;background:var(--surface);color:var(--ink);border:1px solid var(--line);box-shadow:0 20px 44px -30px rgba(0,0,0,.45);transition:transform .25s,box-shadow .25s}
+.pc:hover{transform:translateY(-6px);box-shadow:0 34px 56px -30px rgba(0,0,0,.5)}
+.pc.feat{background:radial-gradient(120% 90% at 0 0,#3a1a17 0,#1d1d1f 55%,#141416 100%);color:#fff;border-color:#3a2623;box-shadow:0 34px 70px -28px rgba(239,68,59,.45)}
+.pc-off{position:absolute;top:22px;right:24px;background:#ef443b;color:#fff;font-size:.78rem;font-weight:800;padding:5px 12px;border-radius:8px;letter-spacing:.01em}
+.pc-name{display:flex;align-items:center;gap:8px;margin:0 0 12px;font-size:1.65rem;font-weight:700;letter-spacing:-.3px;line-height:1.2}
+.pc-name svg{width:22px;height:22px;color:#f9b168;fill:#f9b168}
+.pc-desc{min-height:3.4em;margin:0 0 22px;color:var(--muted);font-size:1.02rem;line-height:1.6}
+.pc.feat .pc-desc{color:#d9d4d2}
+.pc-was{min-height:1.5em;color:var(--muted);font-size:1.05rem}.pc-was s{text-decoration-thickness:1.5px}
+.pc.feat .pc-was{color:#b8b1ae}
+.pc-price{font-size:3.1rem;font-weight:800;letter-spacing:-1.5px;line-height:1.1;margin:2px 0 22px}
+.pc-price small{font-size:1.1rem;font-weight:600;letter-spacing:0;color:var(--muted);margin-left:4px}
+.pc.feat .pc-price small{color:#cfc8c5}
+.pc-btn{display:flex;align-items:center;justify-content:center;height:58px;border-radius:12px;font-weight:700;font-size:1.08rem;text-decoration:none;
+ background:transparent;color:var(--brand);box-shadow:inset 0 0 0 1.5px var(--brand);transition:background .2s,color .2s,transform .2s}
+.pc-btn:hover{background:var(--brand);color:#fff;text-decoration:none}
+.pc.feat .pc-btn{background:linear-gradient(90deg,#ef443b,#f59b50);color:#fff;box-shadow:0 18px 32px -14px rgba(239,68,59,.8)}
+.pc.feat .pc-btn:hover{filter:brightness(1.07)}
+.pc-note{margin:16px 0 0;color:var(--muted);font-size:.86rem;line-height:1.5}.pc.feat .pc-note{color:#b8b1ae}
+.pc hr{border:0;border-top:1px solid var(--line);margin:24px 0 18px}.pc.feat hr{border-top-color:rgba(255,255,255,.14)}
+.pc ul{list-style:none;margin:0;padding:0;flex:1}
+.pc li{display:flex;align-items:flex-start;gap:12px;margin:13px 0;font-size:1rem;line-height:1.5}
+.pc li svg{flex:none;width:20px;height:20px;margin-top:2px;color:var(--ok)}.pc.feat li svg{color:#7ddc9c}
+
+.plans-q{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px;max-width:1180px;margin:28px auto 0}
+.qc{display:flex;flex-direction:column;gap:14px;padding:26px 30px;border-radius:20px;background:var(--surface);border:1px solid var(--line);box-shadow:0 16px 36px -30px rgba(0,0,0,.45)}
+.qc-head{display:flex;align-items:center;gap:16px}.qc-ico{width:52px;height:52px;border-radius:14px;display:grid;place-items:center;background:color-mix(in srgb,var(--brand) 14%,transparent);color:var(--brand)}.qc-ico svg{width:26px;height:26px}
+.qc h3{margin:0;font-size:1.35rem}.qc-head p{margin:2px 0 0;color:var(--muted)}
+.qc ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:6px 18px}.qc li{display:flex;gap:10px;font-size:.96rem;line-height:1.45}.qc li svg{flex:none;width:18px;height:18px;margin-top:2px;color:var(--ok)}
+.qc .pc-btn{height:50px;margin-top:4px}
+@media(max-width:980px){.plans3{grid-template-columns:1fr;max-width:520px}.plans-q{grid-template-columns:1fr;max-width:520px}.qc ul{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){.pc,.pc:hover{transition:none;transform:none}}
+.pc{padding-top:68px}.pc-off{top:24px}
