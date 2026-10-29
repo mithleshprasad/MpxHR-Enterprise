@@ -375,3 +375,23 @@ html,body{overflow-x:hidden}
 .pc{padding-top:68px}.pc-off{top:24px}
 /* the home page now shows the real dashboard screenshot instead of the old 3D composition */
 .hero-img img.shot{border-radius:18px;border:1px solid var(--line);box-shadow:0 40px 80px -36px rgba(0,0,0,.6);background:var(--surface)}
+/* home: new-release pill, product tour, what's new, compliance chips, price teaser */
+.newpill{display:inline-flex;align-items:center;gap:8px;margin:0 0 14px;padding:6px 14px 6px 8px;border-radius:99px;border:1px solid var(--line);background:var(--surface);color:var(--ink);font-size:.86rem;font-weight:600;box-shadow:var(--shadow)}
+.newpill b{background:var(--brand);color:#fff;border-radius:99px;padding:2px 10px;font-size:.74rem;letter-spacing:.04em;text-transform:uppercase}.newpill .ic{width:15px;height:15px}.newpill:hover{text-decoration:none;border-color:var(--brand)}
+.hero img.shot.flat{transform:none!important;animation:none;filter:drop-shadow(0 28px 40px rgba(0,0,0,.35));border:1px solid rgba(0,0,0,.08)}
+.show-tabs{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-bottom:18px}
+.show-tabs button{border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:99px;padding:9px 18px;font:600 .92rem/1 inherit;font-family:inherit;cursor:pointer;transition:all .15s}
+.show-tabs button:hover{border-color:var(--brand)}.show-tabs button.on{background:var(--brand);border-color:var(--brand);color:#fff;box-shadow:0 8px 18px -8px var(--brand)}
+.show-frame{position:relative;max-width:1080px;margin:0 auto;border-radius:16px;border:1px solid var(--line);background:var(--surface);box-shadow:0 30px 60px -30px rgba(0,0,0,.45);overflow:hidden}
+.show-bar{display:flex;gap:6px;padding:10px 14px;background:var(--soft);border-bottom:1px solid var(--line)}.show-bar i{width:10px;height:10px;border-radius:50%;background:#cbd5e1;display:block}.show-bar i:nth-child(1){background:#f87171}.show-bar i:nth-child(2){background:#fbbf24}.show-bar i:nth-child(3){background:#4ade80}
+.show-img{display:none;width:100%;height:auto;border-radius:0}.show-img.on{display:block;animation:showIn .35s both}@keyframes showIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.newgrid .newc{display:flex;flex-direction:column;gap:6px;color:inherit}.newgrid .newc:hover{text-decoration:none;transform:translateY(-3px);border-color:var(--brand)}.newgrid .newc p{color:var(--muted);flex:1;margin:0}
+.more{display:inline-flex;align-items:center;gap:6px;color:var(--brand);font-weight:700;font-size:.9rem;margin-top:8px}.more .ic{width:15px;height:15px}
+.chiprow{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;max-width:980px;margin:0 auto}
+.chip2{display:inline-flex;align-items:center;gap:8px;padding:9px 16px;border-radius:99px;background:var(--surface);border:1px solid var(--line);font-weight:600;font-size:.92rem}.chip2 .ic{width:16px;height:16px;color:var(--ok)}
+.ptease{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;max-width:980px;margin:0 auto}
+.ptease .pt{display:flex;flex-direction:column;gap:2px;color:inherit;text-align:left}.ptease .pt:hover{text-decoration:none;transform:translateY(-3px)}.ptease .pt h3{margin:0}
+.ptease .pt.feat{border:2px solid var(--brand);box-shadow:0 18px 40px -22px var(--brand)}
+.ptease .was{margin-top:10px;color:var(--muted)}.ptease .was b{background:#16a34a;color:#fff;border-radius:6px;padding:1px 8px;font-size:.78rem;margin-left:6px}
+.ptease .amt{font-size:2.3rem;font-weight:800;line-height:1.1}.ptease .amt small{font-size:.9rem;font-weight:600;color:var(--muted);margin-left:6px}
+@media(max-width:900px){.ptease{grid-template-columns:1fr}.show-tabs button{padding:8px 13px;font-size:.85rem}}

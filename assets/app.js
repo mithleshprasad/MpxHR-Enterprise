@@ -142,3 +142,16 @@
         }
     });
 })();
+
+// home: product tour tabs
+(function () {
+    var box = document.getElementById('show');
+    if (!box) return;
+    var tabs = box.querySelectorAll('.show-tabs button'), imgs = box.querySelectorAll('.show-img');
+    tabs.forEach(function (b) {
+        b.addEventListener('click', function () {
+            tabs.forEach(function (x) { x.classList.toggle('on', x === b); });
+            imgs.forEach(function (im) { im.classList.toggle('on', im.getAttribute('data-for') === b.getAttribute('data-show')); });
+        });
+    });
+})();
