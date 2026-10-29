@@ -395,3 +395,9 @@ html,body{overflow-x:hidden}
 .ptease .was{margin-top:10px;color:var(--muted)}.ptease .was b{background:#16a34a;color:#fff;border-radius:6px;padding:1px 8px;font-size:.78rem;margin-left:6px}
 .ptease .amt{font-size:2.3rem;font-weight:800;line-height:1.1}.ptease .amt small{font-size:.9rem;font-weight:600;color:var(--muted);margin-left:6px}
 @media(max-width:900px){.ptease{grid-template-columns:1fr}.show-tabs button{padding:8px 13px;font-size:.85rem}}
+/* home modules */
+.modgrid .mod{display:flex;flex-direction:column;gap:4px;position:relative}.modgrid .mod h3{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:6px 0 2px}
+.modgrid .mod p{min-height:3.2em}.modgrid .mod .ticks{margin:10px 0 6px;flex:1}.modgrid .mod .ticks li{font-size:.93rem;margin:6px 0}
+.newtag{background:var(--brand);color:#fff;border-radius:99px;padding:2px 10px;font-size:.7rem;font-weight:800;letter-spacing:.05em;text-transform:uppercase}
+.modgrid .mod.isnew{border:2px solid var(--brand);box-shadow:0 18px 40px -24px var(--brand)}
+@media(min-width:901px){.modgrid,#why .grid3{grid-template-columns:repeat(3,minmax(0,1fr))}}
